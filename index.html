@@ -1,5 +1,4 @@
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n<style>
   :root{
     --green:#0E7A46; --green-d:#0A3D26; --green-l:#3FA76A;
     --wash:#EAF4EE; --wash-2:#F1F8F3;
@@ -145,8 +144,7 @@
   .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(92px + var(--safe));background:var(--green-d);color:#fff;font-size:13px;padding:10px 16px;border-radius:11px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:30;box-shadow:var(--shadow)}
   .toast.on{opacity:1}
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
-</style>
-
+</style>\n<style>.pill{display:inline-block;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:20px;padding:2px 9px;margin-left:8px;vertical-align:2px;font-weight:600}.val{font-size:14.5px;line-height:1.45}</style>\n
 <div id="app">
   <header>
     <svg class="route" viewBox="0 0 780 200" preserveAspectRatio="none" aria-hidden="true">
@@ -157,32 +155,32 @@
       <span class="logo" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none"><path d="M2 15.5 L22 9 M22 9 L15 4 M22 9 L14.5 13.5 M8 11.5 L5 9.5 L2.5 10.5 L6 13 Z" stroke="#0E7A46" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/></svg>
       </span>
-      <b>SODEXAM</b><span>· Mission conseil STRATEGEO</span>
+      <b>SODEXAM</b><span>&middot; Mission conseil STRATEGEO</span><span class="pill">Lecture seule</span>
     </div>
-    <h1>Suivi des activités — Conseiller Stratégie &amp; Développement Durable</h1>
-    <div class="ref">STG/SDX/MS/2026-003 · juin 2025 – juillet 2026 · <span id="stamp">—</span></div>
+    <h1>Suivi des activit&eacute;s &mdash; Conseiller Strat&eacute;gie &amp; D&eacute;veloppement Durable</h1>
+    <div class="ref">STG/SDX/MS/2026-003 &middot; juin 2025 &ndash; juillet 2026 &middot; <span id="stamp">consultation &middot; &eacute;tat au 02 juillet 2026</span></div>
   </header>
 
   <div class="deck">
     <div class="card hero">
       <div class="gauge" id="gauge"></div>
       <div class="kpis">
-        <div class="kpi"><div class="kv" id="kDone">0</div><div class="kl"><span class="dot done"></span>réalisées</div></div>
+        <div class="kpi"><div class="kv" id="kDone">0</div><div class="kl"><span class="dot done"></span>r&eacute;alis&eacute;es</div></div>
         <div class="kpi"><div class="kv" id="kRun">0</div><div class="kl"><span class="dot run"></span>en cours</div></div>
-        <div class="kpi"><div class="kv" id="kTodo">0</div><div class="kl"><span class="dot todo"></span>à engager</div></div>
-        <div class="kpi"><div class="kv" id="kTot">0</div><div class="kl">activités suivies</div></div>
+        <div class="kpi"><div class="kv" id="kTodo">0</div><div class="kl"><span class="dot todo"></span>&agrave; engager</div></div>
+        <div class="kpi"><div class="kv" id="kTot">0</div><div class="kl">activit&eacute;s suivies</div></div>
       </div>
     </div>
   </div>
 
   <div class="charts">
     <div class="card chartcard">
-      <h3>Trajectoire 2026 <em>activités réalisées, cumul</em></h3>
-      <div class="trendwrap"><svg id="trend" viewBox="0 0 320 132" role="img" aria-label="Courbe de tendance des activités réalisées en 2026"></svg></div>
+      <h3>Trajectoire 2026 <em>activit&eacute;s r&eacute;alis&eacute;es, cumul</em></h3>
+      <div class="trendwrap"><svg id="trend" viewBox="0 0 320 132" role="img" aria-label="Courbe de tendance des activites realisees en 2026"></svg></div>
       <div class="tlabels" id="tlabels"></div>
       <div class="tkey">
-        <span><i></i>Réalisé (constaté)</span>
-        <span><i class="proj"></i>Trajectoire de clôture (projection)</span>
+        <span><i></i>R&eacute;alis&eacute; (constat&eacute;)</span>
+        <span><i class="proj"></i>Trajectoire de cl&ocirc;ture (projection)</span>
       </div>
       <p class="tnote" id="tnote"></p>
     </div>
@@ -195,18 +193,16 @@
   <div class="sticky">
     <div class="tabs" role="tablist" id="tabs"></div>
     <div class="tools">
-      <input id="q" type="search" placeholder="Rechercher (PARSA, ESG, Macao…)" aria-label="Rechercher">
+      <input id="q" type="search" placeholder="Rechercher (PARSA, ESG, Macao&hellip;)" aria-label="Rechercher">
       <select id="dom" aria-label="Filtrer par domaine"><option value="">Tous domaines</option></select>
     </div>
   </div>
 
-  <div class="newzone"><button id="btnNew" class="newbtn">＋ Nouvelle activité (hors rapport)</button></div>
   <div id="listWrap"></div>
-  <p class="warn" id="storeWarn" hidden>Stockage indisponible sur cet appareil (navigation privée ?) — utilisez « Exporter le point » avant de fermer.</p>
 </div>
 
 <div class="dock">
-  <button id="btnExport">Exporter le point</button>
+  <button id="btnExport">Copier la synth&egrave;se</button>
   <button id="btnNext" class="primary">Actions du mois</button>
 </div>
 
@@ -214,19 +210,18 @@
 <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sTitle">
   <div class="grab"></div>
   <div class="sheet-head">
-    <div><div class="eyebrow" id="sDom">—</div><h2 id="sTitle">—</h2></div>
-    <button class="close" id="sClose" aria-label="Fermer">×</button>
+    <div><div class="eyebrow" id="sDom">&mdash;</div><h2 id="sTitle">&mdash;</h2></div>
+    <button class="close" id="sClose" aria-label="Fermer">&times;</button>
   </div>
   <div class="sheet-body" id="sBody"></div>
   <div class="sheet-foot" id="sFoot"></div>
 </div>
 <div class="toast" id="toast"></div>
-
-<script>
+\n<script>
 (function(){
 "use strict";
 
-/* ============ 1. Données du rapport du 02 juillet 2026 (VERROUILLÉES) ============ */
+/* ============ Donnees du rapport du 02 juillet 2026 (fixes, lecture seule) ============ */
 const D = {
   A:"Planification & pilotage stratégique", B:"Sûreté & souveraineté aéroportuaire",
   C:"ESG & développement durable", E:"Veille stratégique sectorielle",
@@ -278,85 +273,21 @@ const TREND = { labels:["Mar","Avr","Mai","Juin","Sep","Déc"], real:[6,8,16,26,
 const STATUTS = ["Réalisé","En cours","À engager"];
 const CLS = {"Réalisé":"done","En cours":"run","À engager":"todo"};
 
-/* ============ 2. État & persistance ============ */
-const KEY="sodexam_suivi_v1";
-let state={items:{},custom:{},seq:0,updated:null}, persist=true;
-
-/* Adaptateur de stockage : utilise le stockage Claude s'il existe (aperçu dans Claude),
-   sinon le stockage du navigateur (localStorage) — ce qui rend le fichier autonome sur
-   GitHub Pages ou en ouverture locale. */
-const store=(function(){
-  const hasWS = typeof window!=="undefined" && window.storage && typeof window.storage.get==="function";
-  if(hasWS) return { get:k=>window.storage.get(k), set:(k,v)=>window.storage.set(k,v) };
-  return {
-    get:async k=>{ const v=localStorage.getItem(k); return v==null?null:{value:v}; },
-    set:async (k,v)=>{ localStorage.setItem(k,v); return {value:v}; }
-  };
-})();
-
-async function load(){
-  try{ const r=await store.get(KEY); if(r&&r.value) state=JSON.parse(r.value); }
-  catch(e){ try{ await store.set(KEY,JSON.stringify(state)); }
-    catch(e2){ persist=false; document.getElementById("storeWarn").hidden=false; } }
-  if(!state.items) state.items={};
-  if(!state.custom) state.custom={};
-  if(typeof state.seq!=="number") state.seq=0;
-}
-let saveTimer=null;
-function save(){
-  state.updated=new Date().toISOString(); stamp();
-  if(!persist) return;
-  clearTimeout(saveTimer);
-  saveTimer=setTimeout(async()=>{ try{ await store.set(KEY,JSON.stringify(state)); }
-    catch(e){ persist=false; document.getElementById("storeWarn").hidden=false; } },250);
-}
-
-/* ---- accès unifié : base verrouillée + ajouts libres ---- */
-function isC(key){ return String(key).charAt(0)==="c"; }
-function baseItem(n){
-  const b=BASE.find(x=>x.n===n), o=state.items[n]||{};
-  return {key:String(n), custom:false, n:b.n, d:b.d, t:b.t, v:b.v||0,
-    p:o.p!==undefined?o.p:b.p, s:o.s||b.s,
-    o:o.o!==undefined?o.o:(b.o||""), l:o.l!==undefined?o.l:(b.l||""),
-    notes:o.notes||[],
-    touched:!!(o.s||(o.notes&&o.notes.length)||o.p!==undefined||o.o!==undefined||o.l!==undefined)};
-}
-function customItem(id){
-  const r=state.custom[id];
-  return {key:id, custom:true, n:"A"+r.dispn, dispn:r.dispn, d:r.d, t:r.t, v:0,
-    p:r.p||"", s:r.s||"À engager", o:r.o||"", l:r.l||"", notes:r.notes||[], touched:true};
-}
-function get(key){ return isC(key)?customItem(key):baseItem(+key); }
-function all(){ return BASE.map(b=>baseItem(b.n)).concat(Object.keys(state.custom).map(customItem)); }
-function counts(l){ const c={"Réalisé":0,"En cours":0,"À engager":0}; l.forEach(i=>c[i.s]++); return c; }
-
-function patchAny(key,k,v){
-  if(isC(key)){ state.custom[key][k]=v; }
-  else{ if(!state.items[key]) state.items[key]={}; state.items[key][k]=v; }
-  save();
-}
-function recOf(key){ return isC(key)?state.custom[key]:(state.items[key]||(state.items[key]={})); }
-
-/* ============ 3. Utilitaires ============ */
+/* ============ Acces (lecture seule, aucune ecriture, aucun stockage) ============ */
 const $=id=>document.getElementById(id);
 function esc(s){ return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
-function domOptions(sel){ return Object.keys(D).map(k=>`<option value="${k}" ${sel===k?"selected":""}>${esc(D[k])}</option>`).join(""); }
-function stamp(){ $("stamp").textContent=state.updated
-  ? "màj "+new Date(state.updated).toLocaleDateString("fr-FR",{day:"2-digit",month:"short"})
-  : "au 02 juillet 2026"; }
+function all(){ return BASE.map(b=>({key:String(b.n),n:b.n,d:b.d,t:b.t,v:b.v||0,p:b.p,s:b.s,o:b.o||"",l:b.l||""})); }
+function counts(l){ const c={"Réalisé":0,"En cours":0,"À engager":0}; l.forEach(i=>c[i.s]++); return c; }
 
-/* ============ 4. Graphiques ============ */
+/* ============ Graphiques ============ */
 function gauge(){
   const c=counts(all()), tot=all().length, pct=Math.round(c["Réalisé"]/tot*100);
   const R=50,C=2*Math.PI*R,cx=60,cy=60;
   const segs=[["Réalisé","var(--green)"],["En cours","var(--amber)"],["À engager","var(--orange)"]];
   let off=0,arcs="";
   segs.forEach(([k,col])=>{ const len=(c[k]/tot)*C;
-    arcs+=`<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${col}" stroke-width="11"
-      stroke-dasharray="${len} ${C-len}" stroke-dashoffset="${-off}" transform="rotate(-90 ${cx} ${cy})"/>`; off+=len; });
-  $("gauge").innerHTML=`<svg viewBox="0 0 120 120" style="width:120px;height:120px">
-    <circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="var(--wash)" stroke-width="11"/>${arcs}</svg>
-    <div class="pctv"><b>${pct}%</b><small>portefeuille clos</small></div>`;
+    arcs+=`<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${col}" stroke-width="11" stroke-dasharray="${len} ${C-len}" stroke-dashoffset="${-off}" transform="rotate(-90 ${cx} ${cy})"/>`; off+=len; });
+  $("gauge").innerHTML=`<svg viewBox="0 0 120 120" style="width:120px;height:120px"><circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="var(--wash)" stroke-width="11"/>${arcs}</svg><div class="pctv"><b>${pct}%</b><small>portefeuille clos</small></div>`;
 }
 function trend(){
   const W=320,H=132,padL=24,padR=8,padT=10,padB=22;
@@ -372,13 +303,7 @@ function trend(){
   const area=line(rp)+` L ${rp[rp.length-1][0].toFixed(1)} ${Y(0)} L ${rp[0][0].toFixed(1)} ${Y(0)} Z`;
   const dots=rp.map(q=>`<circle cx="${q[0]}" cy="${q[1]}" r="3.2" fill="var(--green)" stroke="#fff" stroke-width="1.5"/>`).join("");
   const last=rp[rp.length-1], pl=pp[pp.length-1];
-  $("trend").innerHTML=`<defs><linearGradient id="gA" x1="0" x2="0" y1="0" y2="1">
-    <stop offset="0" stop-color="var(--green)" stop-opacity=".22"/><stop offset="1" stop-color="var(--green)" stop-opacity="0"/></linearGradient></defs>
-    ${grid}<path d="${area}" fill="url(#gA)"/>
-    <path d="${line(pp)}" fill="none" stroke="var(--orange)" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
-    <path d="${line(rp)}" fill="none" stroke="var(--green)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-    ${dots}<circle cx="${pl[0]}" cy="${pl[1]}" r="3" fill="#fff" stroke="var(--orange)" stroke-width="1.8"/>
-    <text x="${last[0]}" y="${last[1]-9}" text-anchor="middle" font-size="10" font-weight="700" fill="var(--green-d)">26</text>`;
+  $("trend").innerHTML=`<defs><linearGradient id="gA" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="var(--green)" stop-opacity=".22"/><stop offset="1" stop-color="var(--green)" stop-opacity="0"/></linearGradient></defs>${grid}<path d="${area}" fill="url(#gA)"/><path d="${line(pp)}" fill="none" stroke="var(--orange)" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/><path d="${line(rp)}" fill="none" stroke="var(--green)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>${dots}<circle cx="${pl[0]}" cy="${pl[1]}" r="3" fill="#fff" stroke="var(--orange)" stroke-width="1.8"/><text x="${last[0]}" y="${last[1]-9}" text-anchor="middle" font-size="10" font-weight="700" fill="var(--green-d)">26</text>`;
   $("tlabels").innerHTML=TREND.labels.map(l=>`<span>${l}</span>`).join("");
   const c=counts(all());
   $("tnote").textContent=`Le gros de la production a atterri en mai-juin (+18 activités). Le contrat reconduit le 26 juin ouvre la phase d'exécution : la trajectoire pointillée figure la clôture du portefeuille si les ${c["À engager"]} actions à engager aboutissent d'ici décembre.`;
@@ -386,30 +311,20 @@ function trend(){
 function domChart(){
   const l=all();
   $("domChart").innerHTML=Object.keys(D).map(k=>{
-    const g=l.filter(i=>i.d===k), c=counts(g), t=g.length;
-    if(!t) return "";
-    return `<div class="d"><div class="dl"><span>${esc(D[k])}</span><b>${c["Réalisé"]}/${t}</b></div>
-      <div class="dbar"><i class="s-done" style="width:${c["Réalisé"]/t*100}%"></i>
-      <i class="s-run" style="width:${c["En cours"]/t*100}%"></i>
-      <i class="s-todo" style="width:${c["À engager"]/t*100}%"></i></div></div>`;
+    const g=l.filter(i=>i.d===k), c=counts(g), t=g.length; if(!t) return "";
+    return `<div class="d"><div class="dl"><span>${esc(D[k])}</span><b>${c["Réalisé"]}/${t}</b></div><div class="dbar"><i class="s-done" style="width:${c["Réalisé"]/t*100}%"></i><i class="s-run" style="width:${c["En cours"]/t*100}%"></i><i class="s-todo" style="width:${c["À engager"]/t*100}%"></i></div></div>`;
   }).join("");
 }
-function board(){
-  const c=counts(all());
+function board(){ const c=counts(all());
   $("kDone").textContent=c["Réalisé"]; $("kRun").textContent=c["En cours"];
-  $("kTodo").textContent=c["À engager"]; $("kTot").textContent=all().length;
-  gauge();
-}
+  $("kTodo").textContent=c["À engager"]; $("kTot").textContent=all().length; gauge(); }
 
-/* ============ 5. Filtres & liste ============ */
-let filter="vives", dom="", q="";
+/* ============ Filtres & liste ============ */
+let filter="tout", dom="", q="";
 function tabs(){
   const l=all(), c=counts(l);
-  const defs=[["vives","À suivre",c["En cours"]+c["À engager"]],
-    ["En cours","En cours",c["En cours"]],["À engager","À engager",c["À engager"]],
-    ["Réalisé","Réalisé",c["Réalisé"]],["tout","Tout",l.length]];
-  $("tabs").innerHTML=defs.map(([k,lab,nn])=>
-    `<button class="tab" role="tab" data-f="${k}" aria-selected="${filter===k}">${lab}<span class="c">${nn}</span></button>`).join("");
+  const defs=[["tout","Tout",l.length],["Réalisé","Réalisé",c["Réalisé"]],["En cours","En cours",c["En cours"]],["À engager","À engager",c["À engager"]],["vives","À suivre",c["En cours"]+c["À engager"]]];
+  $("tabs").innerHTML=defs.map(([k,lab,nn])=>`<button class="tab" role="tab" data-f="${k}" aria-selected="${filter===k}">${lab}<span class="c">${nn}</span></button>`).join("");
 }
 function domSelect(){ const s=$("dom"),cur=s.value;
   s.innerHTML='<option value="">Tous domaines</option>'+Object.keys(D).map(k=>`<option value="${k}">${esc(D[k])}</option>`).join(""); s.value=cur; }
@@ -417,8 +332,7 @@ function matchF(i){
   if(filter==="vives"&&i.s==="Réalisé") return false;
   if(filter!=="vives"&&filter!=="tout"&&i.s!==filter) return false;
   if(dom&&i.d!==dom) return false;
-  if(q){ const h=(i.n+" "+i.t+" "+i.o+" "+i.l+" "+D[i.d]+" "+i.notes.map(x=>x.t).join(" ")).toLowerCase();
-    if(!h.includes(q.toLowerCase())) return false; }
+  if(q){ const h=(i.n+" "+i.t+" "+i.o+" "+i.l+" "+D[i.d]).toLowerCase(); if(!h.includes(q.toLowerCase())) return false; }
   return true;
 }
 function list(){
@@ -427,168 +341,68 @@ function list(){
   let html="",cur=null;
   sel.forEach(i=>{
     if(i.d!==cur){ if(cur!==null) html+="</div>"; cur=i.d; html+=`<div class="group">${esc(D[cur])}</div><div class="cards">`; }
-    const nb=i.notes.length?`<span>·</span>${i.notes.length} note${i.notes.length>1?"s":""}`:"";
-    const badge=i.custom?'<span class="flag add">ajout</span>':(i.v?'<span class="flag">vigilance</span>':"");
-    html+=`<div class="row ${i.custom?"add":""}"><button data-k="${i.key}">
-      <span class="stripe ${CLS[i.s]}"></span>
-      <span class="rmid"><span class="t">${esc(i.t)}</span>
-        <span class="meta"><span class="chip ${CLS[i.s]}">${esc(i.s)}</span>${esc(i.p)}${nb}${badge}</span></span>
-      <span class="rnum">N°${esc(i.n)}</span></button></div>`;
+    const badge=i.v?'<span class="flag">vigilance</span>':"";
+    html+=`<div class="row"><button data-k="${i.key}"><span class="stripe ${CLS[i.s]}"></span><span class="rmid"><span class="t">${esc(i.t)}</span><span class="meta"><span class="chip ${CLS[i.s]}">${esc(i.s)}</span>${esc(i.p)}${badge}</span></span><span class="rnum">N&deg;${esc(i.n)}</span></button></div>`;
   });
   $("listWrap").innerHTML=html+"</div>";
 }
 function render(){ board(); trend(); domChart(); tabs(); list(); }
 
-/* ============ 6. Feuille de détail ============ */
-let open=null;
+/* ============ Fiche de detail (lecture seule) ============ */
 function sheet(key){
-  open=key; const i=get(key);
-  $("sDom").textContent=D[i.d]+(i.custom?" · ajout":"");
-  $("sTitle").textContent=(i.custom?"N° "+i.n+" — ":"N° "+i.n+" — ")+i.t;
-  const head = i.custom
-    ? `<div class="lab">Intitulé</div><input id="cT" value="${esc(i.t)}">
-       <div class="lab">Domaine</div><select id="cD">${domOptions(i.d)}</select>`
-    : `<div class="lab">Activité<span class="locked">· ligne du rapport, verrouillée</span></div>
-       <div class="lever" style="border-left-color:var(--muted)">${esc(i.t)}</div>`;
+  const i=all().find(x=>x.key===key); if(!i) return;
+  $("sDom").textContent=D[i.d];
+  $("sTitle").textContent="N\u00b0 "+i.n+" \u2014 "+i.t;
   $("sBody").innerHTML=`
-    ${head}
     <div class="lab">Statut</div>
-    <div class="seg" id="segS">${STATUTS.map(s=>`<button data-s="${s}" aria-pressed="${i.s===s}">${s}</button>`).join("")}</div>
+    <div><span class="chip ${CLS[i.s]}" style="font-size:13px;padding:4px 12px">${esc(i.s)}</span></div>
     <div class="lab">Période / échéance</div>
-    <input id="fP" value="${esc(i.p)}">
+    <div class="val">${esc(i.p)||"—"}</div>
     <div class="lab">Observation — prochaine étape</div>
-    <textarea id="fO" rows="3">${esc(i.o)}</textarea>
-    ${(i.l||i.s!=="Réalisé"||i.custom)?`<div class="lab">Levier d'activation</div>
-      <textarea id="fL" rows="2" placeholder="Acte à signer, saisine à transmettre, jalon à fixer…">${esc(i.l)}</textarea>`:""}
-    <div class="lab">Journal (${i.notes.length})</div>
-    <ul class="notes" id="notes">${i.notes.map((x,k)=>
-      `<li><time>${new Date(x.d).toLocaleDateString("fr-FR",{day:"2-digit",month:"short",year:"numeric"})}</time>
-       ${esc(x.t)}<br><button class="del" data-k="${k}">Supprimer</button></li>`).join("")||
-       '<li style="border:0;padding-left:0;color:var(--muted)">Rien de consigné pour l\'instant.</li>'}</ul>
-    <textarea id="fN" rows="2" placeholder="Consigner (relance, échange, décision obtenue…)"></textarea>
-    <div><button class="addn" id="addN">+ Ajouter au journal</button></div>`;
-  $("sFoot").innerHTML = i.custom
-    ? `<button class="danger" id="sDel">Supprimer</button><button id="sSave">Enregistrer</button>`
-    : `<button class="ghost" id="sCancel">Fermer</button><button id="sSave">Enregistrer</button>`;
-  showSheet();
-}
-function newActivity(){
-  open="new";
-  $("sDom").textContent="Nouvelle activité";
-  $("sTitle").textContent="Ajout hors rapport initial";
-  $("sBody").innerHTML=`
-    <div class="lab">Intitulé de l'activité</div>
-    <input id="nT" placeholder="Ex. : Note de position sur la redevance passagers">
-    <div class="lab">Domaine de rattachement</div>
-    <select id="nD">${domOptions("A")}</select>
-    <div class="lab">Statut</div>
-    <div class="seg" id="segN">${STATUTS.map(s=>`<button data-s="${s}" aria-pressed="${s==="À engager"}">${s}</button>`).join("")}</div>
-    <div class="lab">Période / échéance</div>
-    <input id="nP" placeholder="Ex. : Août 2026, À cadrer…">
-    <div class="lab">Observation — prochaine étape</div>
-    <textarea id="nO" rows="3" placeholder="Où en est le dossier, quelle est la prochaine action ?"></textarea>
-    <div class="lab">Levier d'activation</div>
-    <textarea id="nL" rows="2" placeholder="Acte à signer, saisine à transmettre, jalon à fixer…"></textarea>`;
-  $("sFoot").innerHTML=`<button class="ghost" id="sCancel">Annuler</button><button id="nCreate">Créer l'activité</button>`;
+    <div class="val">${esc(i.o)||"—"}</div>
+    ${i.l?`<div class="lab">Levier d'activation</div><div class="lever">${esc(i.l)}</div>`:""}
+    ${i.v?`<div class="lab">Point de vigilance</div><div class="val" style="color:var(--orange)">Activité signalée comme sensible dans le rapport &mdash; à surveiller.</div>`:""}`;
+  $("sFoot").innerHTML=`<button id="sClose2">Fermer</button>`;
   showSheet();
 }
 function showSheet(){ $("veil").classList.add("on"); $("sheet").classList.add("on"); document.body.style.overflow="hidden"; $("sheet").scrollTop=0; }
-function shut(){ open=null; $("veil").classList.remove("on"); $("sheet").classList.remove("on"); document.body.style.overflow=""; }
+function shut(){ $("veil").classList.remove("on"); $("sheet").classList.remove("on"); document.body.style.overflow=""; }
 function toast(m){ const t=$("toast"); t.textContent=m; t.classList.add("on"); setTimeout(()=>t.classList.remove("on"),1700); }
 
-/* ============ 7. Export ============ */
+/* ============ Copie de la synthese (lecture) ============ */
 function exportTxt(){
   const l=all(), c=counts(l), d=new Date().toLocaleDateString("fr-FR");
-  let s=`POINT D'ÉTAPE — Mission CTSDD SODEXAM (STG/SDX/MS/2026-003)\nArrêté au ${d}\n`;
+  let s=`SYNTHÈSE — Mission CTSDD SODEXAM (STG/SDX/MS/2026-003)\nÉtat au 02 juillet 2026 · consulté le ${d}\n`;
   s+=`${c["Réalisé"]} réalisées · ${c["En cours"]} en cours · ${c["À engager"]} à engager (sur ${l.length})\n`;
   ["En cours","À engager"].forEach(st=>{
     s+=`\n--- ${st.toUpperCase()} ---\n`;
-    l.filter(i=>i.s===st).forEach(i=>{
-      s+=`\n[N°${i.n}] ${i.t}${i.custom?" (hors rapport initial)":""}\n  Échéance : ${i.p}\n  Étape : ${i.o}\n`;
-      if(i.l) s+=`  Levier : ${i.l}\n`;
-      i.notes.forEach(x=> s+=`  · ${new Date(x.d).toLocaleDateString("fr-FR")} — ${x.t}\n`);
-    });
+    l.filter(i=>i.s===st).forEach(i=>{ s+=`\n[N°${i.n}] ${i.t}\n  Échéance : ${i.p}\n  Étape : ${i.o}\n`; if(i.l) s+=`  Levier : ${i.l}\n`; });
   });
-  const modif=l.filter(i=>!i.custom&&i.touched);
-  if(modif.length){
-    s+=`\n--- MOUVEMENTS DEPUIS LE RAPPORT DU 02/07/2026 ---\n`;
-    modif.forEach(i=>{ const b=BASE.find(x=>x.n===+i.key);
-      if(b.s!==i.s) s+=`[N°${i.n}] ${b.s} → ${i.s}\n`;
-      i.notes.forEach(x=> s+=`[N°${i.n}] ${new Date(x.d).toLocaleDateString("fr-FR")} — ${x.t}\n`); });
-  }
-  const cust=l.filter(i=>i.custom);
-  if(cust.length){
-    s+=`\n--- ACTIVITÉS AJOUTÉES (hors rapport initial) ---\n`;
-    cust.forEach(i=> s+=`[N°${i.n}] ${i.t} — ${i.s}${i.p?" · "+i.p:""}\n`);
-  }
-  $("sDom").textContent="Export"; $("sTitle").textContent="Point d'étape au "+d;
-  $("sBody").innerHTML=`<p style="color:var(--muted);font-size:13px;margin-top:0">À copier dans un courriel, une note au DGPI ou la prochaine version du rapport. Les ajouts sont signalés « hors rapport initial ».</p>
-    <textarea id="out" rows="15" style="font-size:13px">${esc(s)}</textarea>`;
-  $("sFoot").innerHTML=`<button class="ghost" id="sCancel">Fermer</button><button id="cp">Copier</button>`;
-  open="export"; showSheet();
+  $("sDom").textContent="Synthèse"; $("sTitle").textContent="Synthèse au "+d;
+  $("sBody").innerHTML=`<p style="color:var(--muted);font-size:13px;margin-top:0">État figé du rapport, à copier dans un courriel ou une note. Cette page est en lecture seule : personne ne peut modifier les activités.</p><textarea readonly style="width:100%;font-size:13px;padding:11px;border:1px solid var(--line);border-radius:11px;background:var(--paper);color:var(--ink)" rows="14" id="out">${esc(s)}</textarea>`;
+  $("sFoot").innerHTML=`<button class="ghost" id="sClose2">Fermer</button><button id="cp">Copier</button>`;
+  showSheet();
 }
 
-/* ============ 8. Événements ============ */
+/* ============ Evenements (navigation & lecture uniquement) ============ */
 $("tabs").addEventListener("click",e=>{ const b=e.target.closest(".tab"); if(!b) return; filter=b.dataset.f; tabs(); list(); });
 $("dom").addEventListener("change",e=>{ dom=e.target.value; list(); });
 $("q").addEventListener("input",e=>{ q=e.target.value.trim(); list(); });
 $("listWrap").addEventListener("click",e=>{ const b=e.target.closest("button[data-k]"); if(b) sheet(b.dataset.k); });
-$("btnNew").addEventListener("click",newActivity);
 $("btnNext").addEventListener("click",()=>{ filter="vives"; dom=""; q=""; $("q").value=""; $("dom").value=""; tabs(); list(); window.scrollTo({top:0,behavior:"smooth"}); });
 $("btnExport").addEventListener("click",exportTxt);
 $("veil").addEventListener("click",shut);
 $("sClose").addEventListener("click",shut);
-
 $("sheet").addEventListener("click",async e=>{
   const t=e.target;
-  if(t.id==="sCancel"){ shut(); return; }
+  if(t.id==="sClose2"){ shut(); return; }
   if(t.id==="cp"){ const o=$("out"); o.select();
     try{ await navigator.clipboard.writeText(o.value); toast("Copié"); }
-    catch(err){ document.execCommand("copy"); toast("Copié"); } return; }
-  if(t.closest("#segS")&&t.dataset.s){ [...t.closest("#segS").children].forEach(b=>b.setAttribute("aria-pressed",b===t)); return; }
-  if(t.closest("#segN")&&t.dataset.s){ [...t.closest("#segN").children].forEach(b=>b.setAttribute("aria-pressed",b===t)); return; }
-
-  /* création */
-  if(t.id==="nCreate"){
-    const nt=$("nT").value.trim();
-    if(!nt){ toast("L'intitulé est requis"); $("nT").focus(); return; }
-    const s=$("segN").querySelector('[aria-pressed="true"]').dataset.s;
-    state.seq++; const id="c"+state.seq;
-    state.custom[id]={ dispn:state.seq, d:$("nD").value, t:nt, s:s,
-      p:$("nP").value.trim(), o:$("nO").value.trim(), l:$("nL").value.trim(), notes:[] };
-    save(); render(); shut(); toast("Activité créée"); return;
-  }
-  /* suppression d'un ajout */
-  if(t.id==="sDel"){
-    if(window.confirm("Supprimer définitivement cette activité ajoutée ? (Les 38 du rapport ne sont pas concernées.)")){
-      delete state.custom[open]; save(); render(); shut(); toast("Activité supprimée");
-    }
-    return;
-  }
-  /* journal */
-  if(t.id==="addN"){ const v=$("fN").value.trim(); if(!v) return;
-    const rec=recOf(open); const notes=(rec.notes||[]).slice(); notes.unshift({d:new Date().toISOString(),t:v});
-    patchAny(open,"notes",notes); sheet(open); toast("Consigné"); return; }
-  if(t.classList.contains("del")&&t.dataset.k!==undefined){
-    const rec=recOf(open); const notes=(rec.notes||[]).slice(); notes.splice(+t.dataset.k,1);
-    patchAny(open,"notes",notes); sheet(open); return; }
-
-  /* enregistrement */
-  if(t.id==="sSave"){
-    const i=get(open);
-    if(i.custom){
-      const nt=$("cT").value.trim(); if(!nt){ toast("L'intitulé est requis"); $("cT").focus(); return; }
-      patchAny(open,"t",nt); patchAny(open,"d",$("cD").value);
-    }
-    const s=$("segS").querySelector('[aria-pressed="true"]').dataset.s;
-    patchAny(open,"s",s); patchAny(open,"p",$("fP").value.trim()); patchAny(open,"o",$("fO").value.trim());
-    if($("fL")) patchAny(open,"l",$("fL").value.trim());
-    render(); shut(); toast("Enregistré");
-  }
+    catch(err){ document.execCommand("copy"); toast("Copié"); } }
 });
-document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&open!==null) shut(); });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape") shut(); });
 
-/* ============ 9. Démarrage ============ */
-(async function(){ await load(); domSelect(); stamp(); render(); })();
+/* ============ Demarrage ============ */
+domSelect(); render();
 })();
-</script>
+</script>\n
